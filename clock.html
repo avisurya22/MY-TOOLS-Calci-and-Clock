@@ -1,0 +1,97 @@
+
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<title>My Tools/Clock</title>
+		 <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+         <link rel="stylesheet" type="text/css" href="homestyle.css">
+	    <link rel="stylesheet" type="text/css" href="clockstyle.css">
+	</head>
+	<body>
+	<table class="option">
+	<tr class="nav" >
+		<th class="logo">MY TOOLS</th>
+		<th><a class="nv" id="home" href="home.html" >Home</a> </th>
+		<th><a class="nv" id="about"href="#">About Us</a></th>
+		<th><a class="nv" id="sign" href="signup.html">Sign Up</a></th>
+
+	</tr>
+    </table>
+
+	
+	<h3> Digital Clock </h3>
+	     
+	<div class="dateAndtime">
+		<div id="calender">
+         <span id=></span>
+		 </div>
+	
+		<div id="value">  </div>  
+    </div>
+
+    <script type="text/javascript">
+
+    function datefunction(){
+	 var dt=new Date();
+    var day=dt.getDay();
+    var d=dt.getDate();
+    var ms=dt.getMonth();
+    var yr=dt.getFullYear();
+
+    var a=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    var b=["Jan","Feb","Mar","Apr","May","Jun","July","Aug","Sept","Oct","Nov","Dec"]
+    var c;
+    var m;
+    for(var i=0;i<=6;i++){
+   	  if(i == day){
+   		c = a[i];
+   		break;
+   	  }//to display day in words
+    }
+    for(var i=0;i<=11;i++){
+   	  if(i == ms){
+   		m = b[i];
+   		break;
+   	  }//to display months
+    }
+    var date = "(" + c +") " + d + "," + m + "," + yr  ;
+    document.getElementById("calender").innerText = date ;
+    document.getElementById("calender").textContent = date ; 
+    }
+
+    datefunction();
+    setInterval(datefunction,1);
+
+	function timefunction(){
+	var dt=new Date(); 
+    var hr=dt.getHours();
+    var mn=dt.getMinutes();
+    var sc=dt.getSeconds();
+    var t="AM";
+    if(hr > 12) {
+       hr=hr-12;
+       t="PM";
+    }
+    hr = (hr == 0) ? 12 : hr;
+    hr = (hr < 10) ? "0" + hr : hr ;
+    mn = (mn < 10) ? "0"+ mn : mn ;
+    sc = (sc < 10) ? "0"+ sc : sc ;
+
+    var time = hr + " : " + mn + " : " + sc +" " + t;
+    document.getElementById("value").innerText = time ;
+    document.getElementById("value").textContent = time ;
+    }
+   
+    timefunction();
+    setInterval(timefunction,1);
+
+    </script>
+
+	</body>
+	</html>

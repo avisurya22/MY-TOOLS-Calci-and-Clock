@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>MY TOOLS/Sign Up Form</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="homestyle.css">
+	<style type="text/css">
+	    *{
+	    	margin: 0;
+	    	padding: 0;
+	    }
+	    body{
+	    	background-color: pink
+	    }
+	  
+	    h2{
+	    	text-align: center;
+	    	font-size: 50px;
+	    	font-family: 'Niconne', cursive;
+	    }
+        .form{
+        	width: 280px;
+            margin: 10% auto 0 ;
+            text-align: center;
+            padding: 10px;
+            background-color: white;
+            border: 2px solid black;
+           
+        }
+        .el{
+        	padding: 5px;
+        	margin: 15px auto 0;
+        	border-radius: 15px;
+        	cursor: text;
+        	font-size: 18px;
+        	outline: none;
+        }
+        checkbox{
+        	height: 18px;
+        }
+        .pw{
+        	padding: 5px;
+        	margin:2px auto 5px;
+        	border-radius: 15px;
+        	cursor: text;
+        	font-size: 18px;
+        	outline: none;
+        }
+        .par{
+        	margin-top: 10px;
+        	font-size: 18px;
+
+        }
+        .bn{
+        	margin-top: 8px;
+        	border-radius: 15px;
+        	padding: 5px;
+        	cursor: pointer;
+        	font-size: 15px;
+        	background-color: skyblue;
+        }
+        hr{
+        	margin: 20px auto 0;
+        	width: 240px;
+        	height: 3px;
+        	background-color: black;
+        }
+        .cs{
+        	margin: -13px auto 10px ;
+        	width: 30px;
+        	font-size: 20px;
+        
+        	background-color: white;
+        }
+        .written{
+        	margin-top: 5px;
+          	border-radius: 15px;
+        	padding: 5px;
+        	cursor: pointer;
+        	font-size: 15px;
+        	background-color: steelblue;
+        }
+        .par2{
+        	margin-top: 20px;
+        	color: #000;
+        	font-size: 17px;
+        }
+        img{
+        	width: 65px;
+        	border-radius: 50%;
+        	border: 1px solid black;
+        	margin-top: -50px;
+        	background-color: white;
+        }
+        a{
+        	text-decoration: none;
+        	font-size: 17px;
+        }
+	</style>
+</head>
+<body>
+	<table class="option">
+	<tr class="nav" >
+		<th class="logo">MY TOOLS</th>
+		<th><a class="nv" id="home" href="home.html" >Home</a> </th>
+		<th><a class="nv" id="about"href="#">About Us</a></th>
+		<th><a class="nv" id="sign" href="signup.html">Sign Up</a></th>
+
+	</tr>
+    </table>
+	<section class="total">
+	<div class="form">
+
+		<form>
+		  <img src="icon.png"><br>
+		  <h2 >Sign Up Now</h2>
+		  <input type="email" placeholder="email@example.com" class="el"><br>
+		  <input type="password" placeholder=" password" class= "pw">
+          <p class="par"><span><input type="checkbox">I agree to the terms of the services</span></p>
+          <button type="button" class="bn" >Sign Up</button>
+          
+          <hr>
+
+          <p class="cs">Or</p>
+          <button type="button" class="written">Sign up with Gmail</button>
+          <p class="par2">Already have an account?<a href="#">Sign in</a></p>
+		</form>
+	</div>
+	</section>
+
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.option{
+	width: 100%;
+    height: 70px;
+    font-size: 20px;
+    color: white;
+    font-family: monospace;   
+    background-image: linear-gradient(to right,#ee9ca7,#ffdde1);
+}
+
+.logo{
+	font-weight: 200;
+    font-family: fantasy;
+    font-size: 40px;
+    letter-spacing: 2px;
+    border: 2px solid white;
+    width: 30%;
+ }
+ a.active,a:hover{
+ 	background: white;
+ 	border: 2px solid grey;
+ 	
+ }
+#home{
+	letter-spacing: 1px;
+	border: 2px solid gray;
+	margin-left: 420px;
+	background-color: white;
+	border-radius: 15px;
+	color: red;
+	text-decoration: none;
+	font-size: 25px;
+	line-height: 30px;
+	padding: 4px;
+}
+#about{
+	padding: 5px;
+	background-color: transparent;
+	border-radius: 5px;
+	color: orangered;
+	text-decoration: none;
+	line-height: 30px;
+
+}
+#about:hover{
+	background-color: white;
+	border-radius: 15px;
+}
+#sign{
+	padding: 5px;
+	background-color: transparent;
+	border-radius: 5px;
+	color: orangered;
+	text-decoration: none;
+	margin-right: 50px;
+	line-height: 30px;
+}
+#sign:hover{
+	background-color: white;
+	border-radius: 15px;
+}
+h1{
+	font-size: 75px;
+	font-weight: 300;
+	font-family: 'Akaya Kanadaka', cursive;
+}
+.mytools{
+	background-image: url("backgroundhome.png");
+	height: 650px;
+	background: cover;
+	width: 100%;
+	text-align: center;
+	padding: auto;
+	postion: relative;
+	margim: 100px auto 100px auto;
+}
+.tools{
+	position: absolute;
+	top: 300px;
+	left: 620px;
+	right: auto;
+	height: 200px;
+	font-size: 70px;
+	font-weight: 900;
+	color: #327fa8;
+}
+.tools2{
+	position: absolute;
+	top: 435px;
+	padding-left: 580px;
+}
+#calci{
+	padding: 5px;
+	width: 70px;
+    border: 2px solid #fff;
+    background-color: grey;
+    text-decoration: none;
+    text-align: center;
+    font-size: 35px;
+    border-radius: 15px;
+    color: white;
+    font-family: 'Cinzel', serif;
+}
+#calci:hover{
+	background-color: hotpink;
+}
+#clock{
+	padding: 5px;
+    width: 70px;
+    border: 2px solid #fff;
+    background-color: grey;
+    text-decoration: none;
+    text-align: center;
+    font-size: 35px;
+    border-radius: 15px;
+    color: white;
+    font-family: 'Cinzel', serif;
+}
+#clock:hover{
+	background-color: hotpink;
+}
+
+
